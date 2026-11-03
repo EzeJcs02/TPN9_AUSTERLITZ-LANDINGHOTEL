@@ -1,0 +1,109 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #2b2b2b;
+  background: #faf7f2;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 32px;
+  background: #1f3a4d;
+  color: #fff;
+}
+.header__marca { font-size: 1.4rem; font-weight: 700; cursor: pointer; }
+.header__nav { display: flex; gap: 8px; flex-wrap: wrap; }
+.header__nav button {
+  background: transparent;
+  color: #fff;
+  border: 0;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.header__nav button:hover { background: rgba(255, 255, 255, 0.15); }
+.header__nav button.activo { background: #c9a35c; color: #1f1f1f; }
+
+.inicio {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  text-align: center;
+  background: linear-gradient(rgba(31, 58, 77, 0.75), rgba(31, 58, 77, 0.75)),
+    linear-gradient(135deg, #3b6a87, #c9a35c);
+  color: #fff;
+}
+.inicio__contenido { max-width: 640px; }
+.inicio h1 { font-size: 2.4rem; margin: 0 0 16px; }
+.inicio p { font-size: 1.15rem; line-height: 1.5; margin: 0 0 24px; }
+
+.seccion { max-width: 1000px; margin: 0 auto; padding: 32px 24px; }
+.seccion h2 { margin-top: 0; color: #1f3a4d; }
+.seccion p { line-height: 1.6; }
+.servicios { padding-left: 20px; line-height: 1.8; }
+
+.boton {
+  background: #c9a35c;
+  color: #1f1f1f;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.boton:hover:not(:disabled) { background: #b8924b; }
+.boton:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.habitaciones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.habitacion {
+  background: #fff;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+.habitacion--elegida { border-color: #c9a35c; }
+.habitacion h4 { margin: 0 0 8px; color: #1f3a4d; }
+.habitacion p { margin: 0 0 8px; font-size: 0.95rem; line-height: 1.4; }
+.habitacion__detalle { color: #666; }
+.habitacion__precio { font-weight: 700; margin-top: auto !important; }
+
+.calendario {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --rdp-accent-color: #1f3a4d;
+  --rdp-range_middle-background-color: #dce8ef;
+}
+
+.resumen {
+  margin-top: 24px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.resumen__total { font-size: 1.2rem; font-weight: 700; }
+
+.footer { text-align: center; padding: 24px; color: #777; font-size: 0.9rem; }
