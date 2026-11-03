@@ -5,7 +5,7 @@ export default function AcercaDeNosotros() {
     <section className="seccion">
       <h2>Acerca de nosotros</h2>
       <p>
-        El Hotel Austerlitz abrió sus puertas en 1998 como un emprendimiento familiar. Hoy
+        El Hotel Termas abrió sus puertas en 1998 como un emprendimiento familiar. Hoy
         cuenta con cuatro tipos de habitación pensadas para viajeros solos, parejas y familias,
         y un equipo que se ocupa de que cada estadía sea cómoda y tranquila.
       </p>

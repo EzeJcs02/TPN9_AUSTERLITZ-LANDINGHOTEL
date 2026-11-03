@@ -8,7 +8,7 @@ export default function Header({ seccion, onNavegar }) {
   return (
     <header className="header">
       <div className="header__marca" onClick={() => onNavegar("inicio")}>
-        Hotel Austerlitz
+        Hotel Termas
       </div>
       <nav className="header__nav">
         {ENLACES.map((enlace) => (
