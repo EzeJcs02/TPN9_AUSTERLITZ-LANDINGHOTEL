@@ -15,7 +15,7 @@ export default function App() {
         {seccion === "acerca" && <AcercaDeNosotros />}
         {seccion === "reservas" && <Reservas />}
       </main>
-      <footer className="footer">© 2026 Hotel Termas · Trabajo Práctico N°9</footer>
+      <footer className="footer">© 2026 Hotel Termas · UCASAL</footer>
     </>
   );
 }
